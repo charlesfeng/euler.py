@@ -13,12 +13,7 @@ def primes(l):
       yield i
       a[i * i : l : i] = [False] * int(math.ceil(float(l - i * i) / i))
 
-ps = []
-
-for i in primes(120000):
-  ps.append(i)
-
-print ps[10001]
+print list(primes(120000))[10001]
 
 # answer: 104759
 # runtime: 0.1s
