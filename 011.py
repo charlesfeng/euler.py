@@ -12,7 +12,7 @@ def f():
   for i in range(0, 17):
     for j in range(0, 17):
       yield max(
-        prod(a[i][j : j + 4]),
+        prod([a[i][j + x] for x in range(0, 4)]),
         prod([a[i + x][j] for x in range(0, 4)]),
         prod([a[i + x][j + x] for x in range(0, 4)]),
         prod([a[i + 3 - x][j + x] for x in range(0, 4)])
