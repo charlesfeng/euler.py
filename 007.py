@@ -14,6 +14,7 @@ def primes(l):
       a[i * i : l : i] = [False] * int(math.ceil(float(l - i * i) / i))
 
 ps = []
+
 for i in primes(120000):
   ps.append(i)
 
