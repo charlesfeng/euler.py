@@ -3,9 +3,7 @@
 # (c) 2013 charles feng (https://github.com/charlesfeng)
 # shared under the mit license (http://www.opensource.org/licenses/mit)
 
-n = 600851475143
-p = 2
-f = 0
+n, p, f = 600851475143, 2, 0
 
 while p < n:
   if n % p:
