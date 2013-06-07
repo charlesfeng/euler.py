@@ -13,3 +13,6 @@ while i < 4000000:
   j += i
   
 print n
+
+# answer: 4613732
+# runtime: 0.1s

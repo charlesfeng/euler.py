@@ -19,3 +19,6 @@ if p > 1:
   f = f if f > p else p
 
 print f
+
+# answer: 6857
+# runtime: 0.2s
