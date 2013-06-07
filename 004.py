@@ -5,7 +5,7 @@
 
 import math
 
-def f ():
+def f():
   for i in range(1998, 199, -1):
     for j in range(int(math.ceil(i / 2)), 1000):
       p = (i - j) * j
