@@ -3,18 +3,9 @@
 # (c) 2013 charles feng (https://github.com/charlesfeng)
 # shared under the mit license (http://www.opensource.org/licenses/mit)
 
-n, p, f = 600851475143, 2, 0
+from modules.divisors import divisors
 
-while p < n:
-  if n % p:
-    p += 1
-  else:
-    f, n, p = (f if f > p else p), n / p, 2
-
-if p > 1:
-  f = f if f > p else p
-
-print f
+print max(divisors(600851475143))
 
 # answer: 6857
-# runtime: 0.2s
+# runtime: 0.1s
