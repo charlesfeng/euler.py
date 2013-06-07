@@ -11,9 +11,7 @@ while p < n:
   if n % p:
     p += 1
   else:
-    f = f if f > p else p
-    n /= p
-    p = 2
+    f, n, p = f if f > p else p, n / p, 2
 
 if p > 1:
   f = f if f > p else p
