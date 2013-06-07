@@ -43,4 +43,4 @@ while d < 500:
 print n * (n + 1) / 2
 
 # answer: 76576500
-# runtime: 5.2s
+# runtime: 4.9s
